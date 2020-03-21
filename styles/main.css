@@ -1,0 +1,27 @@
+body {
+  display: grid;
+  grid-template-columns: 25vw 50vw auto;
+  grid-template-rows: 10vh 20vh 65vh 5vh;
+  grid-template-areas:
+    "header header header header"
+    "menu menu menu menu"
+    "content content content content"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+}
+
+footer {
+  grid-area: footer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
