@@ -1,27 +1,67 @@
+@import "header.css";
+@import url("footer.css");
+@import url("about.css");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 body {
   display: grid;
-  grid-template-columns: 25vw 50vw auto;
-  grid-template-rows: 10vh 20vh 65vh 5vh;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 30vh 5vh 57vh 8vh;
   grid-template-areas:
     "header header header header"
     "menu menu menu menu"
     "content content content content"
     "footer footer footer footer";
+  margin: 0;
+  font-family: "Courgette", cursive;
 }
 
-header {
-  grid-area: header;
+main {
+  margin: 0;
+  grid-area: content;
+  overflow: auto;
 }
 
-.menu {
-  grid-area: menu;
+#cardContainer {
   display: flex;
+  flex-direction: row;
+  height: 20rem;
+  justify-content: space-around;
 }
 
-footer {
-  grid-area: footer;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  height: 25rem;
+  width: 30rem;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 16px;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-family: "Courgette", cursive;
+}
+
+.menu > a:hover {
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+h3 {
+  margin: 0;
 }

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+header {
+  grid-area: header;
+  font-family: "Kaushan Script", cursive;
+  color: #ffffff;
+  background: url(../assets/img/cover-pic.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.blogTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(138, 116, 116);
+  color: #ffffff;
+  font-family: "Courgette", cursive;
+  align-items: center;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: #ffffff;
+}
